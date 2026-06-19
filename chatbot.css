@@ -236,8 +236,8 @@ body.light .chatbot-fab:hover .robot-mouth {
   bottom: 30px;
   right: 30px;
   width: 380px;
-  height: 520px;
-  max-height: 80vh;
+  height: 600px;
+  max-height: 85vh;
   background: var(--card-bg);
   border: 1px solid rgba(0, 191, 255, 0.2);
   border-radius: 16px;
@@ -348,6 +348,67 @@ body.light .chatbot-fab:hover .robot-mouth {
 }
 body.light .chatbot-action-btn:hover {
   background: rgba(0, 0, 0, 0.05);
+}
+
+/* Persistent Contact Shortcut Dock */
+.chatbot-contact-dock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(0, 191, 255, 0.1);
+}
+
+.chatbot-contact-dock span {
+  font-size: 0.78rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-dock-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 191, 255, 0.08);
+  border: 1px solid rgba(0, 191, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+}
+
+.contact-dock-btn:hover {
+  transform: translateY(-3px);
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.3);
+}
+
+body.light .chatbot-contact-dock {
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+body.light .contact-dock-btn {
+  background: rgba(0, 86, 179, 0.06);
+  border: 1px solid rgba(0, 86, 179, 0.12);
+  color: #0056b3;
+}
+
+body.light .contact-dock-btn:hover {
+  background: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.25);
 }
 
 /* Chat Messages */
@@ -562,7 +623,7 @@ body.light .chatbot-msg-wrapper.bot .chatbot-bubble {
     bottom: 20px;
     right: 20px;
     width: calc(100% - 40px);
-    height: 480px;
-    max-height: 80vh;
+    height: 540px;
+    max-height: 85vh;
   }
 }
